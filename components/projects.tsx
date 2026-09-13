@@ -7,10 +7,16 @@ import { motion } from "framer-motion"
 
 const projects = [
   {
-    title: "Banana Over It",
-    description: "Juego móvil disponible en Play Store. Una experiencia divertida y desafiante.",
-    link: "https://play.google.com/store/apps/details?id=com.BetoCorp.BananaOverIt&hl=es",
-    type: "Juego",
+    title: "Albion-Web",
+    description: "Aplicación web y herramientas para la comunidad de Albion Online.",
+    link: "https://github.com/jeredeldo/Albion-Web",
+    type: "Web App",
+  },
+  {
+    title: "TiendaNew",
+    description: "Plataforma de comercio electrónico moderna y completa.",
+    link: "https://github.com/jeredeldo/TiendaNew",
+    type: "E-commerce",
   },
 ]
 
@@ -58,7 +64,7 @@ export function Projects() {
           className="text-center space-y-4"
         >
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary to-foreground">
-            Proyectos & Perfiles
+            Proyectos Destacados
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty font-light">
             Algunos de mis trabajos y dónde puedes encontrarme
@@ -72,7 +78,7 @@ export function Projects() {
             whileInView="visible"
             viewport={{ once: true, margin: "-50px" }}
           >
-            <h3 className="text-2xl font-bold mb-8 pl-4 border-l-4 border-primary">Proyectos Destacados</h3>
+            <h3 className="text-2xl font-bold mb-8 pl-4 border-l-4 border-primary">Mis Trabajos</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {projects.map((project) => (
                 <motion.div key={project.title} variants={itemVariants}>
